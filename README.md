@@ -10,8 +10,7 @@ This project implements and compares two collaborative filtering models (Neural 
 - [Running Experiments](#running-experiments)
 - [Code Overview](#code-overview)
 - [Results](#results)
-- [Troubleshooting](#troubleshooting)
-- [Acknowledgements](#acknowledgements)
+
 
 ---
 
@@ -84,11 +83,8 @@ This will:
 After running, you will find a file at `results/results.txt` with content like:
 ```
 Model	MAE
-NCF_MLP	0.XXXX
+NCF_MLP	   0.XXXX
 Autoencoder	0.XXXX
 ```
 
-## Troubleshooting
-- **IndexError: index out of range in self**: Ensure you have the correct `ratings.dat` file and that the code is mapping user/movie IDs to contiguous indices (already handled in this repo).
-- **FileNotFoundError**: Make sure the dataset is in the correct location and the `results` directory exists (the code will create it if missing).
-- **CUDA not available**: The code will automatically use CPU if CUDA is not available.
+
